@@ -23,13 +23,13 @@
   },
 
   "custom/logo": {
-    "format": "",
+    "format": "󰣇",
     "tooltip": false
   },
 
 
   "clock": {
-    "format": "{:%d/%m/%y |%H:%M}"
+    "format": "{:%d/%m/%y | %H:%M}"
   }
 }
 

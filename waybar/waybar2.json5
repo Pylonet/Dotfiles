@@ -5,14 +5,14 @@
   "position": "top",
   "height": 0,
   "spacing": 0,
-  "width": 1920,
+  //"width": 1920,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["tray"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": [],
+  "modules-right": ["network"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -21,8 +21,28 @@
   },
 
   "tray": {
-    "show-passive-items": true,
     "spacing": 10
+  },
+
+  "network": {
+    "tooltip-format-ethernet": "{ifname}     {ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "interval": 2,
+    "on-click-right": "kitty nmtui",
+    "format": "{}",
+    "format-alt-click": "click",
+    "format-alt": "     {ifname} | {ipaddr}/{cidr} | {gwaddr} {essid}",
+    "format-disconnected": "Disconnected",
+    "format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} 󰈁"
+  },
+
+  "memory": {
+    "interval": 10,
+    "format": "  {percentage}%",
+    "max-length": 10,
+    "tooltip": true,
+    "tooltip-format": "RAM - {used:0.1f}GiB used"
   },
 
 }
