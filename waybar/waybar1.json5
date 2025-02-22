@@ -1,0 +1,35 @@
+// :set filetype=json5
+
+{
+  "output": "DP-4",
+  // "margin-top": 0,
+  "layer": "top",
+  "position": "top",
+  "height": 0,
+  "spacing": 0,
+  "width": 1920,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["custom/logo"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["clock"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format": "",
+    "show-empty": false,
+  },
+
+  "custom/logo": {
+    "format": "",
+    "tooltip": false
+  },
+
+
+  "clock": {
+    "format": "{:%d/%m/%y |%H:%M}"
+  }
+}
+

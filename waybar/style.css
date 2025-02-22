@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+window#waybar>box {
+  margin: 10px 20px 5px 20px;
+}
+
+#workspaces {
+  padding: 0 8px;
+  background: #191919;
+  border-radius: 25px;
+}
+
+/* CENTER BUTTONS */
+#workspaces button {
+  font-size: 10px; /* 4px es demasiado pequeño */
+  padding: 8px 10px; /* Reduce el padding para evitar que sobresalga */
+  opacity: 1;
+  color: #6A6A6A;
+  border-radius: 10px; /* Agrega un borde redondeado pero sin romper el diseño */
+  border: none;
+}
+
+#workspaces button:hover,
+#workspaces button.active:hover,
+#workspaces button.empty:hover {
+  border: none;
+  color: red;
+  color: #e6ce8c;
+  background: #191919;
+}
+
+#workspaces button.urgent {
+  color: yellow;
+}
+
+#workspaces button.empty {
+  color: white;
+}
+
+#workspaces button.active {
+  color: #e6ce8c;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#custom-logo {
+  font-size: 18px;
+  background: whitesmoke;
+  color: black;
+  padding: 0px 21px 0px 14px;
+  border-radius: 50px; /* Agregar la unidad 'px' */
+}
+
+#clock {
+  background: #191919;
+  color: white;
+  padding: 0px 21px 0px 21px;
+  border-radius: 50px;
+}
+
+#tray menu {
+  background: red;
+}
+

@@ -1,0 +1,28 @@
+{
+  "output": "HDMI-A-2",
+  // "margin-top": 0,
+  "layer": "top",
+  "position": "top",
+  "height": 0,
+  "spacing": 0,
+  "width": 1920,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["tray"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format": "",
+    "show-empty": false,
+  },
+
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10
+  },
+
+}
