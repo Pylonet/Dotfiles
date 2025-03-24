@@ -12,7 +12,7 @@
   "fixed-center": true,
   "modules-left": ["tray"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network"],
+  "modules-right": [""],
 
   "hyprland/workspaces": {
     "format": "{name}",
