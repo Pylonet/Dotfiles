@@ -131,3 +131,15 @@ XF86AudioLowerVolume
 # FLAMESHOT
 super + shift + s 
   /usr/bin/flameshot gui
+
+alt + shift + 1
+    bspc desktop -f 11
+
+alt + shift + 2
+    bspc desktop -f 12
+
+alt + shift + 3
+    bspc desktop -f 13
+
+alt + shift + 4
+    bspc desktop -f 14
